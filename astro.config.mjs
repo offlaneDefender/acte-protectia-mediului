@@ -7,6 +7,6 @@ import icon from "astro-icon";
 // https://astro.build/config
 export default defineConfig({
   site: "https://offlanedefender.github.io",
-  base: "/",
+  base: "/acte-protectia-mediului/",
   integrations: [tailwind(), mdx(), sitemap(), icon()],
 });
