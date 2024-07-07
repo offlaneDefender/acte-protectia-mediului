@@ -1,21 +1,21 @@
 ---
 import Container from "@components/container.astro";
-import Link from "@components/ui/link.astro";
-import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+
+const baseUrl = 'acte-protectia-mediului';
 
 const menuitems = [
   {
     title: "Despre",
-    path: "/about",
+    path: `${baseUrl}/about`,
   },
   {
     title: "Preturi",
-    path: "/pricing",
+    path: `${baseUrl}/pricing`,
   },
   {
     title: "Contact",
-    path: "/contact",
+    path: `${baseUrl}/contact`,
   },
 ];
 ---
