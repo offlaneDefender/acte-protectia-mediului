@@ -1,16 +1,14 @@
-  ---
+---
 import { Picture } from "astro:assets";
 import heroImage from "assets/hero.png";
-import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon/components";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-0 md:pb-24">
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
-      alt="Astronaut in the air"
+      alt="Tree"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
@@ -19,11 +17,34 @@ import { Icon } from "astro-icon/components";
   </div>
   <div>
     <h1
-      class="text-4xl lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Consultanță Mediu Bistrița-Năsăud, obținere avize, acorduri autorizații de mediu. 
-      <br/>
-      <br/>
-      Gestiunea deșeurilor, raportări către Agenția pentru Protecția Mediului B-N
+      class="text-2xl lg:text-2xl xl:text-3xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Consultanță Mediu Bistrița-Năsăud, obținere avize, acorduri autorizații de
+      mediu.
     </h1>
+    <p class="indent-8">
+      Sunt necesare la deschiderea unei activități cu impact asupra mediului, la
+      încetarea unei activități cu impact asupra mediului, la vinderea unei
+      activități, la accesarea unor credite, la obținerea unor fonduri europene
+      nerambursabile
+    </p>
+    <br />
+    <br />
+    <h1
+      class="text-2xl lg:text-2xl xl:text-3xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Gestiunea deșeurilor, raportări către Agenția pentru Protecția
+      Mediului B-N
+    </h1>
+    <ul class="list-disc list-inside">
+      <li>raportări de mediu</li>
+      <li>raportări deșeuri</li>
+      <li>raportări ambalaje</li>
+      <li>raportări uleiuri uzate</li>
+      <li>raportări DEEE</li>
+      <li>raportări baterii și acumulatori</li>
+      <li>raportări vehicule scoase din uz</li>
+      <li>raportări emisii industriale</li>
+      <li>întocmirea si depunerea declarațiilor către AFM (Administrația Fondului pentru Mediu)</li>
+      <li>consultanță privind obligațiile legale ale comercianților  in Sistemul de Garanție și Returnare (SGR)</li>
+    </ul>
   </div>
 </main>
